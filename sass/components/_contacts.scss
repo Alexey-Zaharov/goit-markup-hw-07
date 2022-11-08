@@ -1,0 +1,20 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__item:not(:first-child) {
+  margin-left: 50px;
+}
+.contacts__link:focus,
+.contacts__link:hover {
+  color: var(--accent-color, blue);
+}
+
+.contacts__link {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  fill: currentColor;
+  color: var(--text-color, grey);
+}

@@ -1,0 +1,21 @@
+.basement__socials {
+  margin-right: 93px;
+}
+
+.basement__socials-list {
+  display: flex;
+  gap: 10px;
+}
+.basementlist-item {
+  width: 44px;
+  height: 44px;
+}
+.basement__social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--basementlogo-color);
+}
+
+.basement__social-link:focus,
+.basement__social-link:hover {
+  background-color: var(--accent-color);
+}

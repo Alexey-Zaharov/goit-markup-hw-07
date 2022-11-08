@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  margin-left: 93px;
+}
+.navigation__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.navigation__link:focus,
+.navigation__link:hover {
+  color: var(--accent-color, blue);
+}
+
+.navigation__current {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.navigation__current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+}
