@@ -1,4 +1,4 @@
-.backdrop__contacts-thumb {
+.backdrop__thumb {
   margin-bottom: 10px;
 
   cursor: pointer;
@@ -8,14 +8,14 @@
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: $textColor;
 
   margin-bottom: 4px;
 
   cursor: pointer;
 }
 
-.backdrop__contacts-icons {
+.backdrop__icons {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -27,10 +27,14 @@
   transition-delay: 0ms;
 
   pointer-events: none;
-}
 
-.backdrop__contacts-thumb:hover .backdrop__contacts-icons {
-  fill: var(--accent-color);
+  .backdrop__thumb:hover & {
+    fill: $accentColor;
+  }
+
+  .backdrop__input:focus + & {
+    fill: $accentColor;
+  }
 }
 
 .backdrop__wrap {
@@ -51,23 +55,18 @@
   transition-delay: 0ms;
 
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: $accentColor;
+  }
+  .backdrop__thumb:hover &,
+  .backdrop__thumb:hover & {
+    border-color: $accentColor;
+  }
 }
 
-.backdrop__input:focus + .backdrop__contacts-icons {
-  fill: var(--accent-color);
-}
-
-.backdrop__input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.backdrop__contacts-thumb:hover .backdrop__input,
-.backdrop__feedback-thumb:hover .backdrop__input {
-  border-color: var(--accent-color);
-}
-
-.backdrop__feedback-thumb {
+.backdrop__thumb--bottom {
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -76,12 +75,12 @@
   resize: none;
   height: 120px;
   padding: 12px 16px;
-}
 
-.backdrop__feedback::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }

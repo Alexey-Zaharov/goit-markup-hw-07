@@ -1,7 +1,6 @@
 .team {
-  background-color: var(--secondarybackground-color);
-}
-
-.team__title {
-  margin-bottom: 50px;
+  background-color: $secondaryBackgroundColor;
+  &__title {
+    margin-bottom: 50px;
+  }
 }

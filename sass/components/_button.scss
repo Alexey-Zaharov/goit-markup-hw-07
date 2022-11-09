@@ -1,14 +1,14 @@
 .btn {
   padding: 10px 32px;
   font-family: inherit;
-  color: var(--actvbtn-textcolor);
+  color: $actvbtnTextColor;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border-color: transparent;
-  background-color: var(--accent-color);
+  background-color: $accentColor;
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -16,9 +16,9 @@
   transition-delay: 0ms;
 
   cursor: pointer;
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: var(--btnhover-color);
+  &:hover,
+  &:focus {
+    background-color: $btnhoverColor;
+  }
 }

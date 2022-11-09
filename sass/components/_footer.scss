@@ -1,20 +1,20 @@
 .basement {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--background-color, black);
-}
+  background-color: $backgroundColor;
 
-.basement__conteiner {
-  display: flex;
-  align-items: baseline;
-}
-.basement__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--mainbackground-color);
+  &__conteiner {
+    display: flex;
+    align-items: baseline;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $mainBackgroundColor;
 
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
 }

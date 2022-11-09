@@ -1,7 +1,7 @@
 .logo__basement {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   padding: 0;
-  color: var(--basementlogo-color, white);
+  color: $basementLogoColor;
   font-style: normal;
 }

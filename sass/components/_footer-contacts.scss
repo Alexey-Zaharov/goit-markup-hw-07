@@ -1,9 +1,8 @@
-.basement__contacts {
+.contacts__basement {
   margin-right: 70px;
   width: 231px;
 }
 .basement__list {
-  list-style: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -19,16 +18,17 @@
   color: #ffffff;
 }
 
-.basement__contact-link:hover,
-.basement__contact-link:focus {
-  color: var(--accent-color, blue);
-}
 
-.basement__contact-link {
+.basement__link {
   color: rgba(255, 255, 255, 0.6);
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }

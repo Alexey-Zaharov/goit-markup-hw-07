@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--maintext-color, black);
-  background-color: var(--mainbackground-color, white);
+  color: $mainTextColor;
+  background-color: $mainBackgroundColor;
 }
 .section {
   padding-top: 94px;

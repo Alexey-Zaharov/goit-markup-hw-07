@@ -11,8 +11,8 @@
   letter-spacing: 0.03em;
   border-radius: 4px;
   border-color: transparent;
-  color: var(--maintext-color, black);
-  background-color: var(--secondarybackground-color, grey);
+  color: $mainTextColor;
+  background-color: $secondaryBackgroundColor;
   border: transparent;
   cursor: pointer;
 
@@ -20,16 +20,16 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
-}
 
-.presentation__btn.first__btn {
-  padding: 6px 25px;
-}
+  &:focus,
+  &:hover {
+    color: $actvbtnTextColor;
+    background-color: $portfolioBtnColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 
-.presentation__btn:focus,
-.presentation__btn:hover {
-  color: var(--actvbtn-textcolor);
-  background-color: var(--potfoliob-btn-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &--size {
+    padding: 6px 25px;
+  }
 }

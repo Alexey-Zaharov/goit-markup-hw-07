@@ -1,6 +1,7 @@
-@import "./utilites/variables";
-@import "./utilites/resets";
-@import "./utilites/utilites";
+@import "./utils/variables";
+@import "./base/resets";
+@import "./base/fonts";
+@import "./base/base";
 @import "./components/header";
 @import "./components/logo";
 @import "./components/navigation";
@@ -13,7 +14,7 @@
 @import "./components/team";
 @import "./components/team-card";
 @import "./components/socials";
-@import "./components/clients-card";
+@import "./components/clients";
 @import "./components/footer";
 @import "./components/footer-logo";
 @import "./components/footer-contacts";

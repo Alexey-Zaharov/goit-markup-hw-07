@@ -1,23 +1,8 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
 
-.header__conteiner {
-  display: flex;
-  align-items: center;
-}
-.navigation__link,
-.contacts__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--maintext-color, black);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+  &__conteiner {
+    display: flex;
+    align-items: center;
+  }
 }

@@ -7,9 +7,9 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--logo-color, black);
-}
+  color: $logoColor;
 
-.logo__web {
-  color: var(--accent-color, blue);
+  &__web {
+    color: $accentColor;
+  }
 }

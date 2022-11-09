@@ -10,7 +10,7 @@
   width: 30px;
   height: 30px;
 
-  background-color: var(--mainbackground-color);
+  background-color: $mainBackgroundColor;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -20,8 +20,9 @@
   transition-delay: 0ms;
 
   cursor: pointer;
-}
-.backdrop__close-btn:focus,
-.backdrop__close-btn:hover {
-  fill: var(--accent-color);
+
+  &:focus,
+  &:hover {
+    fill: $accentColor;
+  }
 }
